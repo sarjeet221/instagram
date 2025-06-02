@@ -31,7 +31,7 @@ export default function Home() {
 
       const data = await response.json();
 
-      if (response.ok) {
+      if (response.status) {
         console.log("Signup successful!");
         // setMessage("Signup successful!");
         seterror(ture);
@@ -46,8 +46,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-white md:bg-gray-100 px-4">
-      <div className="max-w-sm w-full p-6">
+    <div className="min-h-screen flex justify-center bg-white md:bg-gray-100 px-4">
+      <div className="max-w-sm w-full p-6 mt-12">
         {/* Logo */}
         {/* <h1 className="text-center font-logo text-4xl mb-6">Instagram</h1> */}
 
@@ -58,7 +58,7 @@ export default function Home() {
             height={30}
             width={70}
             alt="instagram"
-            className="w-[35vw] h-auto mx-auto mb-8"
+            className="w-[300px] h-auto mx-auto mb-8"
           />
         </div>
 
@@ -148,7 +148,7 @@ export default function Home() {
         </div>
 
         {/* Signup */}
-        <div className="mt-6 text-center text-sm">
+        <div className="mt-6 text-center text-sm ">
           <span>Don&apos;t have an account? </span>
           <a href="#" className="text-[#0095f6] font-semibold">
             Sign up
@@ -156,7 +156,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="mt-6 text-xs text-center text-gray-400 space-y-2">
+        <div className="mt-[100px] text-xs text-center text-gray-400 space-y-2">
           <div>
             Meta · About · Blog · Jobs · Help · API · Privacy · Terms ·
             Locations · Instagram Lite · Threads
